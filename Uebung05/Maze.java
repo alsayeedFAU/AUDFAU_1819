@@ -44,9 +44,16 @@ public class Maze {
 	}
 
 	public static boolean[][] solveMaze(boolean[][][] maze, boolean[][] deadEnds) {
+		/*
+		while((int[] koords = seekDeadEnd(maze, deadEnds)) != null){
+			deadEnds[koords[0]][koords[1]] = true;
+		}
+		
+		return deadends;
+		*/
+		
 		int[] koords = seekDeadEnd(maze, deadEnds);
 		if (koords == null) {
-			//System.out.println("hello");
 			return deadEnds;
 		}
 
