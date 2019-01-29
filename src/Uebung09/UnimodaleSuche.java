@@ -14,7 +14,7 @@ public class UnimodaleSuche<T>{
 
 		
 		if ((end - start) > 2) {
-			if (vergleich.compare(mittleres, naechtest) < 0) {
+			if (vergleich.compare(mittleres, naechtest) < 0) { // 5 - 2 = 
 				return suche(Liste, mitteListe + 1, end, vergleich);
 			}else{
 				return suche(Liste, start, mitteListe, vergleich);

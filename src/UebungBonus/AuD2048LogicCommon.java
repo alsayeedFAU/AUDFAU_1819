@@ -314,10 +314,10 @@ public class AuD2048LogicCommon extends AuD2048Logic {
 
 	}
 
-	public boolean hasWinner(int z) {
+	public boolean hasWinner(int mode) {
 		for (int i = 0; i < cols; i++) {
 			for (int j = 0; j < rows; j++) {
-				if (gameBoard[i][j] == target[z]) {
+				if (gameBoard[i][j] == target[mode]) {
 					return true;
 				}
 			}
@@ -333,7 +333,6 @@ public class AuD2048LogicCommon extends AuD2048Logic {
 
 	@Override
 	public boolean hasWinner() {
-		System.out.println("2");
 		return false;
 	}
 
